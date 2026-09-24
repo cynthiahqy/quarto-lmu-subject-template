@@ -10,6 +10,8 @@ execute:
 format:
   lmu-revealjs:
     # Slide logo (white background). Differs from the navbar logo in _brand.yml.
+    # Set here, not in the extension, because of quarto-dev/quarto-cli#14946;
+    # once fixed the extension can ship a default logo again.
     logo: _extensions/lmu/logos/LMU_Logo_RGB_InvertiertGruen.png
     width: 1280
     height: 720
