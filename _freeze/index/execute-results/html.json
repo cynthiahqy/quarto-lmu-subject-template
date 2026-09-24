@@ -1,0 +1,15 @@
+{
+  "hash": "1f4d5107bac03bcda57232c0482a26df",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"{{< var course.title >}}\"\nsubtitle: \"{{< var course.term >}}\"\n---\n\n## About\n\nTODO: short course description.\n\nContact: {{< var course.contact >}}\n\n## Schedule\n\n| Week | Date | Topic | Slides | Practical | Quiz |\n|---|---|---|---|---|---|\n| 1 | YYYY-MM-DD | Introduction | [Slides](01-intro/slides.qmd){target=\"_blank\"} | [Practical](01-intro/practical.qmd) | [Quiz](01-intro/quiz.qmd){target=\"_blank\"} |\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -2,6 +2,10 @@
 
 Quarto website for **Subject Name**: weekly Reveal.js slides and HTML practicals.
 
+## Quarto version
+
+Pinned to 1.9.36 in `.github/workflows/publish.yml` (must match local `quarto --version`). Bump both together.
+
 ## Commands
 
 ```bash

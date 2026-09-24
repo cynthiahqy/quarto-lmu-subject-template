@@ -12,6 +12,10 @@ Minimal LMU-branded template for a course website: home page with generated sche
 
 See `AGENTS.md` for structure and conventions.
 
+## Quarto version
+
+Developed and tested with Quarto **1.9.36**, pinned in `.github/workflows/publish.yml` so CI builds match local renders. When you upgrade Quarto locally, update the pinned `version:` there too.
+
 ## Slide theme
 
 Slides use the `lmu-revealjs` format from [quarto-lmu-revealjs](https://github.com/soda-lmu/quarto-lmu-revealjs), vendored in `_extensions/lmu/`. To update: `quarto update extension soda-lmu/quarto-lmu-revealjs`.
