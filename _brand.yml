@@ -22,5 +22,7 @@ typography:
   headings: Roboto
   monospace: Roboto Mono
 
+# Website navbar logo (navbar is LMU green, so use the white logo).
+# Slides use a different logo, set in _slides.yml.
 logo:
-  small: _extensions/lmu/logos/LMU_Logo_RGB_InvertiertGruen.png
+  small: _extensions/lmu/logos/LMU_Logo_RGB_InvertiertWeiss.png

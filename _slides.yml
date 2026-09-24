@@ -9,6 +9,8 @@ execute:
 
 format:
   lmu-revealjs:
+    # Slide logo (white background). Differs from the navbar logo in _brand.yml.
+    logo: _extensions/lmu/logos/LMU_Logo_RGB_InvertiertGruen.png
     width: 1280
     height: 720
     chalkboard: true
