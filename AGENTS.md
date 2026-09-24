@@ -4,7 +4,7 @@ Quarto website for **Subject Name**: weekly Reveal.js slides and HTML practicals
 
 ## Quarto version
 
-Pinned to 1.10.18 in `.github/workflows/publish.yml` (must match local `quarto --version`). Bump both together.
+Developed and tested with 1.10.18. Deploys are manual (`quarto publish gh-pages`); if a CI workflow is added, pin the same version there.
 
 ## Commands
 

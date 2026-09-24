@@ -8,13 +8,13 @@ Minimal LMU-branded template for a course website: home page with generated sche
 2. Edit `_variables.yml`, `_brand.yml`, `_quarto.yml` (search for `TODO`).
 3. `./_utilities/new-week.sh 02 slug "Topic" YYYY-MM-DD` for each week.
 4. `quarto preview`.
-5. Push to GitHub; enable Pages on the `gh-pages` branch.
+5. Deploy manually with `quarto publish gh-pages` (an automated GitHub Actions workflow is tracked in the issues).
 
 See `AGENTS.md` for structure and conventions.
 
 ## Quarto version
 
-Developed and tested with Quarto **1.10.18**, pinned in `.github/workflows/publish.yml` so CI builds match local renders. When you upgrade Quarto locally, update the pinned `version:` there too.
+Developed and tested with Quarto **1.10.18** (`quarto --version`). If you add automated publishing, pin the same version in the workflow so CI builds match local renders.
 
 ## Slides: the LMU Reveal.js extension (optional)
 
