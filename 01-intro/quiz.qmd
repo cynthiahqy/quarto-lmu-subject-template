@@ -1,0 +1,38 @@
+---
+title: "Quiz: Introduction"
+subtitle: "Week 1 · Subject Name"
+format:
+  revealjs:
+    incremental: true
+    scrollable: true
+metadata-files:
+  - ../_slides.yml
+---
+
+# Recap
+
+## Q1
+
+Question text?
+
+1. Option A
+2. Option B
+3. Option C
+4. Option D
+
+::: {.fragment}
+Answer: 2) Short explanation.
+:::
+
+# Introduction
+
+## Q2
+
+Question text?
+
+1. Option A
+2. Option B
+
+::: {.fragment}
+Answer: 1) Short explanation.
+:::

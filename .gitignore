@@ -1,7 +1,30 @@
+# Quarto / R build artefacts
 /.quarto/
 _site/
+**/*_files/
+**/*.quarto_ipynb
 .Rproj.user/
 .Rhistory
+.RData
+.Renviron
+.venv/
+
+# macOS
 .DS_Store
-*_files/
-!_freeze/
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+*.icloud
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*~
+*.swp

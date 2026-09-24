@@ -15,13 +15,13 @@ Contact: {{< var course.contact >}}
 #| echo: false
 #| results: asis
 w <- yaml::read_yaml("_variables.yml")$weeks
-cat("| Week | Date | Topic | Slides | Practical |\n|---|---|---|---|---|\n")
+cat("| Week | Date | Topic | Slides | Practical | Quiz |\n|---|---|---|---|---|---|\n")
 for (x in w) {
   if (is.null(x$folder)) {
-    cat(sprintf("| %s | %s | *%s* | | |\n", x$number, x$date, x$note %||% "No class"))
+    cat(sprintf("| %s | %s | *%s* | | | |\n", x$number, x$date, x$note %||% "No class"))
   } else {
-    cat(sprintf("| %s | %s | [%s](%s/index.qmd) | [Slides](%s/slides.qmd){target=\"_blank\"} | [Practical](%s/practical.qmd) |\n",
-                x$number, x$date, x$topic, x$folder, x$folder, x$folder))
+    cat(sprintf("| %s | %s | [%s](%s/index.qmd) | [Slides](%s/slides.qmd){target=\"_blank\"} | [Practical](%s/practical.qmd) | [Quiz](%s/quiz.qmd){target=\"_blank\"} |\n",
+                x$number, x$date, x$topic, x$folder, x$folder, x$folder, x$folder))
   }
 }
 ```

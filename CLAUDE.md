@@ -8,6 +8,7 @@ Quarto website for **Subject Name**: weekly Reveal.js slides and HTML practicals
 quarto preview                      # live preview
 quarto render                       # full site to _site/
 quarto render 02-topic/slides.qmd   # single file
+# /publish-slides 02-topic          # Claude Code: pre-publish checklist for a week
 ./new-week.sh 02 slug "Topic" YYYY-MM-DD   # scaffold a week + register it in _variables.yml
 ```
 
@@ -29,6 +30,7 @@ quarto render 02-topic/slides.qmd   # single file
 | `index.qmd` | landing page (Slides / Practical / Resources) |
 | `slides.qmd` | Reveal.js lecture |
 | `practical.qmd` | HTML exercise sheet |
+| `quiz.qmd` | Reveal.js multiple-choice quiz (answers as fragments); delete if not needed |
 | `_session-plan.qmd` | private notes, not rendered |
 | `images/` | week-specific assets |
 
@@ -47,4 +49,4 @@ Underscore-prefixed files are partials: include them with `{{< include >}}`; the
 
 ## Optional additions
 
-Quizzes (`quiz.qmd`), reflection prompts, group projects and exams are not part of the base template; add them per unit and register them in `_quarto.yml` and `_week-template/`.
+Reflection prompts, group projects and exams are not part of the base template; add them per unit and register them in `_quarto.yml` and `_week-template/`.
