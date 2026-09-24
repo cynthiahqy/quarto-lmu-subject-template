@@ -1,0 +1,42 @@
+---
+title: "Subject Name"
+subtitle: "Week N: TOPIC"
+date: "YYYY-MM-DD"
+format: revealjs
+metadata-files:
+  - ../_slides.yml
+---
+
+```{r}
+#| label: setup
+#| include: false
+#| file: ../_slides-setup.R
+```
+
+# Announcements
+
+1. TODO
+
+# Last Week
+
+## Recap
+
+- TODO
+
+# This Week
+
+- TODO
+
+# Section Name
+
+## Slide title
+
+Content
+
+# Summary
+
+## Key takeaways
+
+::: incremental
+- TODO
+:::

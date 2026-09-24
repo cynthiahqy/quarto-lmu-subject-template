@@ -1,0 +1,14 @@
+# Shared Reveal.js defaults. Load per deck with:  metadata-files: [../_slides.yml]
+format:
+  revealjs:
+    theme: [default, ../style/custom-revealjs.scss]
+    width: 1280
+    height: 720
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    transition: fade
+    smaller: true
+    code-line-numbers: true
+    # footer: "site url here"
+    # logo: ../images/logo-small.png

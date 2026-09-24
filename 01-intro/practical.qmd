@@ -1,0 +1,15 @@
+---
+title: "Practical 1"
+subtitle: "Introduction"
+date: "YYYY-MM-DD"
+format:
+  html:
+    toc: true
+    code-tools: true
+execute:
+  eval: false
+---
+
+## Exercise 1
+
+## Exercise 2

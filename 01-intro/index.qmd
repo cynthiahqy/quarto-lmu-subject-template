@@ -1,0 +1,13 @@
+---
+title: "Introduction"
+---
+
+## Slides
+
+[Open slides](slides.qmd){target="_blank"}
+
+## Practical
+
+[Open practical](practical.qmd)
+
+## Resources

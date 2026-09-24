@@ -1,0 +1,17 @@
+# Single source of truth for course metadata and schedule.
+# Use in .qmd files: {{< var course.title >}}, {{< var weeks.w01.topic >}}
+course:
+  title: "Subject Name"
+  term: "Term Year"
+  lecture_time: ""
+  lecture_room: ""
+  contact: ""
+  site_url: ""
+
+weeks:
+  w01:
+    number: 1
+    date: "YYYY-MM-DD"
+    topic: "Introduction"
+    folder: "01-intro"
+    references: ""

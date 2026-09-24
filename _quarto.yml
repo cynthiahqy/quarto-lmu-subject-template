@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "!CLAUDE.md"
+    - "!README.md"
+    - "!_week-template/**"
+    - "!**/_session-plan.qmd"
+
+format:
+  html:
+    theme: [brand, style/custom.scss]
+    toc: true
+    code-fold: true
+    link-external-newwindow: true
+
+brand: _brand.yml
+
+website:
+  title: "Subject Name"          # TODO
+  navbar:
+    left:
+      - {href: index.qmd, text: Home}
+      - {href: syllabus.qmd, text: Syllabus}
+
+execute:
+  freeze: true
+  # engine: knitr                # uncomment for R; use jupyter for Python

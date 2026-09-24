@@ -1,0 +1,26 @@
+meta:
+  name:
+    full: Your Institution      # TODO
+    short: Inst
+
+color:
+  palette:
+    primary-colour: "#1F5FA6"   # TODO
+    dark-grey: "#626468"
+    light-grey: "#F5F5F5"
+  foreground: "#232323"
+  background: "#FFFFFF"
+  primary: primary-colour
+  secondary: dark-grey
+  light: light-grey
+
+typography:
+  fonts:
+    - {family: Roboto, source: google}
+    - {family: Roboto Mono, source: google}
+  base: Roboto
+  headings: Roboto
+  monospace: Roboto Mono
+
+# logo:
+#   small: images/logo-small.png
