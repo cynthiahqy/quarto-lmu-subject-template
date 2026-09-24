@@ -9,6 +9,11 @@ execute:
 
 format:
   lmu-revealjs:
+    # Project-root-relative: the extension's own default logo path does not
+    # resolve in a website subfolder, so the logo is set here.
+    logo: shared/LMU_Logo_RGB_InvertiertGruen.png
+    width: 1280
+    height: 720
     chalkboard: true
     smaller: true
     code-line-numbers: true
