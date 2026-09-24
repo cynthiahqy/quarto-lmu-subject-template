@@ -1,6 +1,6 @@
 title: LMU Reveal.js
 author: Cynthia Huang
-version: 1.0.0
+version: 1.1.0
 quarto-required: ">=1.6.0"
 contributes:
   formats:
@@ -10,8 +10,6 @@ contributes:
       width: 1280
       height: 720
       slide-number: true
-      chalkboard: true
-      preview-links: auto
       transition: fade
-      smaller: true
-      code-line-numbers: true
+      preview-links: auto
+      fig-align: center

@@ -1,4 +1,4 @@
-# Course-level slide settings. Theme, logo and layout defaults come from the
+# Teaching-specific slide settings. Theme, logo and layout defaults come from the
 # lmu-revealjs extension (_extensions/lmu). Load per deck with:
 #   format: lmu-revealjs
 #   metadata-files: [../_slides.yml]
@@ -9,5 +9,7 @@ execute:
 
 format:
   lmu-revealjs:
-    fig-align: center
+    chalkboard: true
+    smaller: true
+    code-line-numbers: true
     # footer: "site url here"
