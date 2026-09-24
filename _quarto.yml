@@ -3,7 +3,7 @@ project:
   output-dir: _site
   render:
     - "*.qmd"
-    - "!CLAUDE.md"
+    - "!AGENTS.md"
     - "!README.md"
     - "!_utilities/**"
     - "!**/_session-plan.qmd"

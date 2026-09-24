@@ -1,4 +1,10 @@
-Pre-publish checklist for one week's slides. Week folder is `$ARGUMENTS` (e.g. `02-topic`); if empty, ask which week.
+---
+name: publish-slides
+description: Pre-publish checklist for one week's slides (files, mechanical checks, metadata, language, structure, render). Use before publishing a week, e.g. `/publish-slides 02-topic`.
+argument-hint: <week-folder>
+---
+
+Week folder is `$ARGUMENTS` (e.g. `02-topic`); if empty, ask which week.
 
 Run each check, fix problems as you go, and ask before removing anything ambiguous (e.g. a TODO). End with the summary table.
 
@@ -20,7 +26,7 @@ Compare against `_variables.yml` (`weeks.wNN`): `date:` matches the week's date 
 Read the prose and code blocks. Fix clear spelling/grammar errors, wrong command or flag names in code, and inconsistent terminology; flag borderline cases.
 
 ## 5. Structure
-Section order per `CLAUDE.md` (Announcements, Last Week, This Week, content sections, Summary; week 1 may omit Last Week). Also check any other slide conventions listed in `CLAUDE.md`.
+Section order per `AGENTS.md` (Announcements, Last Week, This Week, content sections, Summary; week 1 may omit Last Week). Also check any other slide conventions listed in `AGENTS.md`.
 
 ## 6. Render
 `quarto render <week>/slides.qmd`. Fix errors; report warnings.

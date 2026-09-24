@@ -1,4 +1,4 @@
-# CLAUDE.md
+# AGENTS.md
 
 Quarto website for **Subject Name**: weekly Reveal.js slides and HTML practicals.
 
@@ -8,7 +8,7 @@ Quarto website for **Subject Name**: weekly Reveal.js slides and HTML practicals
 quarto preview                      # live preview
 quarto render                       # full site to _site/
 quarto render 02-topic/slides.qmd   # single file
-# /publish-slides 02-topic          # Claude Code: pre-publish checklist for a week
+# /publish-slides 02-topic          # skill: pre-publish checklist for a week
 ./_utilities/new-week.sh 02 slug "Topic" YYYY-MM-DD   # scaffold a week + register it in _variables.yml
 ```
 
