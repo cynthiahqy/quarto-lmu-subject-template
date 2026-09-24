@@ -27,7 +27,6 @@ quarto render 02-topic/slides.qmd   # single file
 
 | File | Role |
 |---|---|
-| `index.qmd` | landing page (Slides / Practical / Resources) |
 | `slides.qmd` | Reveal.js lecture |
 | `practical.qmd` | HTML exercise sheet |
 | `quiz.qmd` | Reveal.js multiple-choice quiz (answers as fragments); delete if not needed |
