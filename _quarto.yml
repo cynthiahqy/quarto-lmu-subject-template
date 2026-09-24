@@ -19,6 +19,7 @@ brand: _brand.yml
 
 website:
   title: "Subject Name"          # TODO
+  favicon: _extensions/lmu/logos/LMU_Logo_RGB_FlaechigGruen.png
   navbar:
     left:
       - {href: index.qmd, text: Home}
