@@ -1,16 +1,16 @@
 meta:
   name:
-    full: Your Institution      # TODO
-    short: Inst
+    full: Ludwig-Maximilians-Universität München
+    short: LMU
 
 color:
   palette:
-    primary-colour: "#1F5FA6"   # TODO
+    green: "#00883A"
     dark-grey: "#626468"
     light-grey: "#F5F5F5"
   foreground: "#232323"
   background: "#FFFFFF"
-  primary: primary-colour
+  primary: green
   secondary: dark-grey
   light: light-grey
 
@@ -22,5 +22,5 @@ typography:
   headings: Roboto
   monospace: Roboto Mono
 
-# logo:
-#   small: images/logo-small.png
+logo:
+  small: _extensions/lmu/logos/LMU_Logo_RGB_FlaechigGruen.png

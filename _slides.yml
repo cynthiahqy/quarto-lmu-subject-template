@@ -1,20 +1,13 @@
-# Shared Reveal.js defaults. Load per deck with:  metadata-files: [../_slides.yml]
+# Course-level slide settings. Theme, logo and layout defaults come from the
+# lmu-revealjs extension (_extensions/lmu). Load per deck with:
+#   format: lmu-revealjs
+#   metadata-files: [../_slides.yml]
 execute:
   echo: true
   message: false
   warning: false
 
 format:
-  revealjs:
+  lmu-revealjs:
     fig-align: center
-    theme: [default, ../style/custom-revealjs.scss]
-    width: 1280
-    height: 720
-    slide-number: true
-    chalkboard: true
-    preview-links: auto
-    transition: fade
-    smaller: true
-    code-line-numbers: true
     # footer: "site url here"
-    # logo: ../images/logo-small.png

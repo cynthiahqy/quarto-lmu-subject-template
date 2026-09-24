@@ -1,6 +1,6 @@
-# Quarto subject website template
+# LMU Quarto subject website template
 
-Minimal template for a course website: home page with generated schedule, syllabus, and weekly slides + practical.
+Minimal LMU-branded template for a course website: home page with generated schedule, syllabus, and weekly slides + practical.
 
 ## Use
 
@@ -11,3 +11,7 @@ Minimal template for a course website: home page with generated schedule, syllab
 5. Push to GitHub; enable Pages on the `gh-pages` branch.
 
 See `AGENTS.md` for structure and conventions.
+
+## Slide theme
+
+Slides use the `lmu-revealjs` format from [quarto-lmu-revealjs](https://github.com/soda-lmu/quarto-lmu-revealjs), vendored in `_extensions/lmu/`. To update: `quarto update extension soda-lmu/quarto-lmu-revealjs`.

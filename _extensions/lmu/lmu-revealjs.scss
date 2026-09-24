@@ -1,0 +1,221 @@
+/*-- scss:defaults --*/
+
+// LMU palette. `!default` lets a project's _brand.yml or theme override these.
+$lmu-green:       #00883A !default;
+$brand-green:     $lmu-green !default;
+$brand-dark-grey: #626468 !default;
+
+
+// Brand colors are injected automatically from _brand.yml when using Quarto >= 1.6.
+// Override reveal.js theme variables here.
+
+// $presentation-heading-font:  "Source Serif Pro", serif;
+// $presentation-font-size-root: 40px;
+$presentation-h2-font-size: 1.1em;
+$presentation-font-smaller: 0.65;
+$presentation-font-smallest: 0.5;
+
+// https://github.com/lmu-osc/train-the-trainer-student-track-OS/blob/main/slides-custom.css
+
+/*-- scss:rules --*/
+
+// ── Title Slide ──────────────────────────────────────────────────────────────
+.reveal .title-slide h1 {
+  font-size: 2em;
+}
+
+// ── Content Slides ───────────────────────────────────────────────────────────
+// A 4 px green bar at the very top of every non-title slide
+// simulates the LMU header band.
+
+// .reveal .slides section:not(#title-slide)::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   height: 4px;
+//   background-color: $brand-green;
+//   z-index: 10;
+// }
+
+// ── Slide Title (h2) ─────────────────────────────────────────────────────────
+// Positioned in the header band area (≈ 6–21 % from top in the PPTX).
+// 22 pt bold, LMU green, left-aligned, with a light divider beneath.
+
+.reveal section:not(:first-of-type) h2 {
+  color: $brand-green;
+  font-weight: bold;
+  font-size: $revealjs-h2-font-size;
+  text-align: left;
+  border-top: 4px solid $brand-green;
+  border-bottom: 1.5px solid $brand-green;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  margin-bottom: 0.4em;
+}
+
+// ── Slide Body Text ────────────────────────────────────────────────────────────────
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+
+.reveal .slides {
+  section p {
+    color: $brand-dark-grey;
+    // text-align: left;
+  }
+
+  a {
+    color: $brand-green;
+    text-decoration: underline;
+
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+}
+
+.reveal .slides section ul,
+.reveal .slides section ol {
+  color: $brand-dark-grey;
+  text-align: left;
+}
+
+// Green bullet markers (matches PPTX buClr = tx1 = $lmu-green)
+.reveal .slides section ul > li::marker {
+  color: $brand-green;
+}
+
+// Links
+
+// .reveal .slides 
+
+// ── Slide Number ─────────────────────────────────────────────────────────────
+// Bold green, bottom-left (matches PPTX: bottom-left, tx1 color, 12 pt bold)
+
+.reveal .slide-number {
+  background-color: transparent;
+  color: $brand-green;
+  font-weight: bold;
+  font-size: 0.65em;
+  text-decoration: none;
+}
+
+// ── Code ─────────────────────────────────────────────────────────────────────
+
+.reveal pre code {
+  border-left: 3px solid $brand-green;
+  box-shadow: none;
+  max-height: 500px;
+}
+
+// ── Tables ───────────────────────────────────────────────────────────────────
+
+.reveal table {
+  thead th {
+    background-color: $brand-green;
+    color: #ffffff;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: rgba($brand-green, 0.06);
+  }
+}
+
+// ── Logo ─────────────────────────────────────────────────────────────────────
+
+.reveal .slide-logo {
+  max-height: 42px;
+  opacity: 1;
+}
+
+
+// ── .smaller: reduced font size for dense content (tables, lists) ────────────
+.reveal .slides section .smaller {
+  font-size: #{$presentation-font-smaller}em;
+
+  table { font-size: inherit; }
+}
+
+// ── .smallest: custom class for very dense slides ────────────────────────────
+.reveal .slides section.smallest {
+  font-size: #{$presentation-font-smallest}em;
+
+  h1 { font-size: calc(#{$revealjs-h1-font-size} / #{$presentation-font-smallest}); }
+  h2 { font-size: calc(#{$revealjs-h2-font-size} / #{$presentation-font-smallest}); }
+  h3 { font-size: calc(#{$revealjs-h3-font-size} / #{$presentation-font-smallest}); }
+}
+
+
+// -- Custom Divs ---
+
+.reveal .slide .task {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    border-left: solid 5px #123233;
+    background-color: rgba($brand-green, 0.06);
+  }
+  
+  .reveal .slide .follow {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    border-left: solid 5px #151233;
+    background-color: #51b3da50;
+  }
+  
+  .reveal .slide .learn-more {
+    text-align: center;
+    font-family: $font-family-monospace;
+    padding-bottom: 10px;
+  }
+
+// ── Q&A blocks (FAQ slides) ───────────────────────────────────────────────────
+// Usage: ::: {.qa}
+//        **Q:** question text
+//        **A:** answer text
+//        :::
+.reveal .slide .qa {
+  padding: 0.3em 0.8em;
+  margin-bottom: 0.5em;
+  border-left: 4px solid $brand-green;
+  background-color: rgba($brand-green, 0.04);
+  border-radius: 0 4px 4px 0;
+
+  p { margin: 0.15em 0; }
+
+  strong:first-child { color: $brand-green; }
+}
+
+// Placeholder for screenshot/demo slides — dashed border box with centred label.
+// Usage: ::: {.image-placeholder}
+//        *screenshot: ...*
+//        :::
+.reveal .slide .image-placeholder {
+  min-height: 380px;
+  border: 2px dashed rgba($brand-green, 0.4);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $text-muted;
+  font-style: italic;
+  background-color: rgba($brand-green, 0.03);
+}
+
+// Makes text invisible while preserving its layout space.
+// Use as an inline span: [hidden text]{.hide}
+// Pairs well with .fragment to reveal text on click.
+.reveal .hide {
+  color: transparent;
+}

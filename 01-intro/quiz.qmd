@@ -2,7 +2,7 @@
 title: "Quiz: Introduction"
 subtitle: "Week 1 · Subject Name"
 format:
-  revealjs:
+  lmu-revealjs:
     incremental: true
     scrollable: true
 metadata-files:

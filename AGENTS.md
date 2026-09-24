@@ -17,8 +17,9 @@ quarto render 02-topic/slides.qmd   # single file
 - `_quarto.yml` — project config, navbar, render allowlist, freeze
 - `_brand.yml` — colours, fonts, logo
 - `_variables.yml` — course metadata and week list (single source of truth; the schedule table on `index.qmd` is generated from it)
-- `_slides.yml` — shared Reveal.js defaults and chunk options (echo, message, warning, fig-align); each deck loads it via `metadata-files: [../_slides.yml]`
-- `style/` — `custom.scss` (HTML) and `custom-revealjs.scss` (slides)
+- `_extensions/lmu/` — LMU Reveal.js format (theme, logo, layout defaults) from [quarto-lmu-revealjs](https://github.com/soda-lmu/quarto-lmu-revealjs); update with `quarto update extension soda-lmu/quarto-lmu-revealjs`
+- `_slides.yml` — course-level slide settings and chunk options (echo, message, warning, fig-align, footer); each deck loads it via `metadata-files: [../_slides.yml]`
+- `style/custom.scss` — HTML page styling
 - `NN-topic/` — one folder per week
 - `_utilities/` — `new-week.sh` and `week-template/`; the script copies the template; edit this to change what new weeks contain
 

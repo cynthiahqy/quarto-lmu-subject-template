@@ -2,7 +2,7 @@
 title: "Subject Name"
 subtitle: "Week N: TOPIC"
 date: "YYYY-MM-DD"
-format: revealjs
+format: lmu-revealjs
 metadata-files:
   - ../_slides.yml
 ---
