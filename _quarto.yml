@@ -19,7 +19,7 @@ brand: _brand.yml
 
 website:
   title: "Subject Name"          # TODO
-  favicon: _extensions/lmu/logos/LMU_Logo_RGB_FlaechigGruen.png
+  favicon: shared/favicon.ico   # from lmu.de; stopgap until official square logo (presse@lmu.de)
   navbar:
     left:
       - {href: index.qmd, text: Home}
