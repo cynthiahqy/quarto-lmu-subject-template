@@ -9,7 +9,7 @@ quarto preview                      # live preview
 quarto render                       # full site to _site/
 quarto render 02-topic/slides.qmd   # single file
 # /publish-slides 02-topic          # Claude Code: pre-publish checklist for a week
-./new-week.sh 02 slug "Topic" YYYY-MM-DD   # scaffold a week + register it in _variables.yml
+./_utilities/new-week.sh 02 slug "Topic" YYYY-MM-DD   # scaffold a week + register it in _variables.yml
 ```
 
 ## Architecture
@@ -21,7 +21,7 @@ quarto render 02-topic/slides.qmd   # single file
 - `_slides-setup.R` — shared setup chunk for slides
 - `style/` — `custom.scss` (HTML) and `custom-revealjs.scss` (slides)
 - `NN-topic/` — one folder per week
-- `_week-template/` — copied by `new-week.sh`; edit this to change what new weeks contain
+- `_utilities/` — `new-week.sh` and `week-template/`; the script copies the template; edit this to change what new weeks contain
 
 ## Per-week folder
 
@@ -38,7 +38,7 @@ Underscore-prefixed files are partials: include them with `{{< include >}}`; the
 
 ## Adding a week
 
-1. `./new-week.sh NN slug "Topic" YYYY-MM-DD`
+1. `./_utilities/new-week.sh NN slug "Topic" YYYY-MM-DD`
 2. Fill in slides and practical. The schedule table updates automatically.
 3. For a no-class week, add an entry to `_variables.yml` with `number`, `date` and `note` only (no `folder`).
 
@@ -49,4 +49,4 @@ Underscore-prefixed files are partials: include them with `{{< include >}}`; the
 
 ## Optional additions
 
-Reflection prompts, group projects and exams are not part of the base template; add them per unit and register them in `_quarto.yml` and `_week-template/`.
+Reflection prompts, group projects and exams are not part of the base template; add them per unit and register them in `_quarto.yml` and `_utilities/week-template/`.

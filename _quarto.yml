@@ -5,7 +5,7 @@ project:
     - "*.qmd"
     - "!CLAUDE.md"
     - "!README.md"
-    - "!_week-template/**"
+    - "!_utilities/**"
     - "!**/_session-plan.qmd"
 
 format:
