@@ -14,7 +14,7 @@ See `AGENTS.md` for structure and conventions.
 
 ## Quarto version
 
-Developed and tested with Quarto **1.9.36**, pinned in `.github/workflows/publish.yml` so CI builds match local renders. When you upgrade Quarto locally, update the pinned `version:` there too.
+Developed and tested with Quarto **1.10.18**, pinned in `.github/workflows/publish.yml` so CI builds match local renders. When you upgrade Quarto locally, update the pinned `version:` there too.
 
 ## Slide theme
 
