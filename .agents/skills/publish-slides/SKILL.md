@@ -17,7 +17,7 @@ List `<week>/slides.qmd` plus every `{{< include >}}` target it references (recu
   awk '/^:::+[ \t]*$/{if(n>0)n--; else print FILENAME":"NR": extra :::"; next} /^:::+[ \t]+[^ \t]/ && !/-->[ \t]*$/{n++; l[n]=NR} END{for(i=1;i<=n;i++) print FILENAME":"l[i]": unclosed div"}' <file>
   ```
 - **Leftovers**: `TODO`, `FIXME`, `placeholder`, and `draft: true` in the YAML (remove the draft flag).
-- **Chunk labels**: every code chunk starts with `#| label: ...`; add a descriptive label where missing. The first chunk must be the `setup` chunk.
+- **Chunk labels**: every code chunk starts with `#| label: ...`; add a descriptive label where missing.
 
 ## 3. Metadata
 Compare against `_variables.yml` (`weeks.wNN`): `date:` matches the week's date and `subtitle:` has the right week number and topic. Flag any other hardcoded dates that disagree with `_variables.yml`.

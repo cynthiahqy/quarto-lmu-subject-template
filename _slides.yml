@@ -1,6 +1,12 @@
 # Shared Reveal.js defaults. Load per deck with:  metadata-files: [../_slides.yml]
+execute:
+  echo: true
+  message: false
+  warning: false
+
 format:
   revealjs:
+    fig-align: center
     theme: [default, ../style/custom-revealjs.scss]
     width: 1280
     height: 720
